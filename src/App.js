@@ -5,6 +5,7 @@ import { BlogPage } from "./pages/BlogPage";
 import { Homepage } from "./pages/HomePage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { Layout } from "./components/Layout";
+import { SinglePage } from "./pages/SinglePage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Homepage />} />
           <Route path='blog' element={<BlogPage />} />
+          <Route path='blog/:id' element={<SinglePage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Route>
