@@ -5,3 +5,5 @@ const Notfoundpage = () => {
         </div>
     )
 }
+
+export {Notfoundpage}
